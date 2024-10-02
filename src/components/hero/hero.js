@@ -5,7 +5,7 @@ import VideoModal from '../ModalVideo/VideoModal';
 // image
 import Himg1 from '../../images/slider/1.png'
 import Hshape from '../../images/slider/shape.svg'
-import clearlogo from '../../images/clearlogo.jpeg'; // Import the new image
+import clearLogo from '../../images/clearLogo.jpeg'; // Import the new image
 
 const ClickHandler = () => {
     window.scrollTo(10, 0);
@@ -35,7 +35,7 @@ const hero = () => {
             <div className="image_content">
                
                 <div className="photo">
-                    <img src={clearlogo} alt="Hospital" />
+                    <img src={clearLogo} alt="Hospital" />
                 </div>
                
             </div>

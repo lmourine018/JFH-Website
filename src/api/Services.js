@@ -11,20 +11,67 @@ import simg6 from '../images/service-single/6.jpg'
 
 const Services = [
     {
-        id: 1,
+        slug: 'dental-services',
+        title: 'Dental Services',
+        description: 'Comprehensive dental care for all ages.',
+        simage: require('../images/services/dental-1.jpg').default, // Ensure correct image path
+        images: [
+            require('../images/services/dental-1.jpg').default,
+            require('../images/services/dental-1.jpg').default,
+        ],
+        capabilitiesDescription: 'Our dental services include:',
+        capabilities: [
+            'Routine Check-ups and Cleanings',
+            'Orthodontics and Braces',
+            'Cosmetic Dentistry',
+            'Dental Implants',
+            'Emergency Dental Care',
+        ],
+        approach: 'Our approach to dental care focuses on patient comfort, modern techniques, and comprehensive treatment plans tailored to each individual.',
+        related: ['maternity-services', 'pharmacology'],
         icon: 'flaticon-tooth',
-        simage: simg1,
-        title: 'Dental Care',
-        description: 'We have more doctor for your dental illness. We are here for your better treatment',
-        slug: 'Dental-Care'
     },
     {
-        id: 2,
-        icon: 'flaticon-mortar',
-        simage: simg2,
+        slug: 'maternity-services',
+        title: 'Maternity Services',
+        description: 'Comprehensive care for expectant mothers.',
+        simage: require('../images/services/maternity-1.jpg').default,
+        images: [
+            require('../images/services/maternity-1.jpg').default,
+            require('../images/services/maternity-1.jpg').default,
+        ],
+        capabilitiesDescription: 'Our maternity services include:',
+        capabilities: [
+            'Prenatal Care',
+            'Birthing Classes',
+            'Postnatal Support',
+            'Lactation Consulting',
+            'Neonatal Care',
+        ],
+        approach: 'We provide compassionate and personalized maternity care, ensuring the health and well-being of both mother and child throughout the pregnancy journey.',
+        related: ['dental-services', 'pharmacology'],
+        icon: 'flaticon-pregnant',
+    },
+    {
+        slug: 'pharmacology',
         title: 'Pharmacology',
-        description: 'We have more doctor for your dental illness. We are here for your better treatment',
-        slug: 'Pharmacology'
+        description: 'Expert pharmaceutical services and consultations.',
+        simage: require('../images/services/pharmacology-1.jpg').default,
+        images: [
+            require('../images/services/pharmacology-1.jpg').default,
+            require('../images/services/pharmacology-1.jpg').default,
+        ],
+        capabilitiesDescription: 'Our pharmacology services include:',
+        capabilities: [
+            'Medication Management',
+            'Pharmaceutical Consultations',
+            'Compounding Services',
+            'Vaccinations and Immunizations',
+            'Health and Wellness Programs',
+        ],
+        approach: 'Our pharmacology team is dedicated to providing accurate and personalized medication management to enhance patient health outcomes.',
+        related: ['dental-services', 'maternity-services'],
+        icon: 'flaticon-pharmacy',
     },
     {
         id: 3,

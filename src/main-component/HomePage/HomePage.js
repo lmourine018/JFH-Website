@@ -19,7 +19,7 @@ import Logo from '../../images/logo.svg'
 const HomePage = () => {
     return (
         <Fragment>
-            <Navbar hclass={'wpo-site-header'}  Logo={'src/images/jfhLogo.jpeg'} />
+            <Navbar hclass={'wpo-site-header'}/>
             <Hero hclass={'static-hero'} />
             <AppointmentSection hclass={'appointment_section'}/>
             <ServiceSection hclass={"service_section section-padding"} />
