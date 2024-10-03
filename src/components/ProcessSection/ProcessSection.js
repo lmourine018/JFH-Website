@@ -14,7 +14,7 @@ const ProcessSection = (props) => {
             <div className="container">
                 <div className="row justify-content-center">
                     <div className="col-lg-9 col-12">
-                        <SectionTitle title={'Our Working Process'} subtitle={'How We Work'}/>
+                        <SectionTitle title={'Why Choose Us'}/>
                     </div>
                 </div>
                 <div className="work_wrapper">
@@ -26,9 +26,10 @@ const ProcessSection = (props) => {
                                         <span className="number">01</span>
                                 </div>
                                 <div className="text">
-                                    <h3>Make Appointment</h3>
-                                    <p>Amet usem turpis vestm hendrerit vestibulum molestie quis. Egestas ultricies
-                                        at placerat.</p>
+                                    <h3>Compassionate Care</h3>
+                                    <p>Our team of dedicated health care professionals is committed to providing compassionate patient-centered care. 
+                                        We treat each patient with respect and empathy, ensuring that 
+                                        you feel valued and understood throughout your healthcare journey</p>
                                 </div>
                             </div>
                         </div>
@@ -39,9 +40,10 @@ const ProcessSection = (props) => {
                                         <span className="number">02</span>
                                 </div>
                                 <div className="text">
-                                    <h3>Get Consultant</h3>
-                                    <p>Amet usem turpis vestm hendrerit vestibulum molestie quis. Egestas ultricies
-                                        at placerat.</p>
+                                    <h3>Comprehensive Services</h3>
+                                    <p>We offer a full spectrum of medical services, from primary care and specialized clinics to emergency and maternity services.
+                                         With everything under one roof,
+                                         we simplify your healthcare experience, making it easier for you to receive the care you need.</p>
                                 </div>
                             </div>
                         </div>
@@ -52,9 +54,10 @@ const ProcessSection = (props) => {
                                         <span className="number">03</span>
                                 </div>
                                 <div className="text">
-                                    <h3>Take Treatment</h3>
-                                    <p>Amet usem turpis vestm hendrerit vestibulum molestie quis. Egestas ultricies
-                                        at placerat.</p>
+                                    <h3>Convenient Access</h3>
+                                    <p>With our Out/Inpatient Department, walk-in services, 
+                                        and easy appointment scheduling, accessing care has never been easier. We prioritize your convenience and work to minimize wait times,
+                                         so you can focus on what matters most—your health..</p>
                                 </div>
                             </div>
                         </div>
@@ -65,9 +68,9 @@ const ProcessSection = (props) => {
                                         <span className="number">04</span>
                                 </div>
                                 <div className="text">
-                                    <h3>Get Relief</h3>
-                                    <p>Amet usem turpis vestm hendrerit vestibulum molestie quis. Egestas ultricies
-                                        at placerat.</p>
+                                    <h3>Skilled Professionals</h3>
+                                    <p>Our healthcare team consists of highly qualified doctors, nurses, and specialists with extensive experience in their fields. We are committed to continuous education and training,
+                                         ensuring you receive the best care based on the latest medical advancements.</p>
                                 </div>
                             </div>
                         </div>

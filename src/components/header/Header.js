@@ -1,25 +1,24 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import MobileMenu from '../MobileMenu/MobileMenu'
-import { totalPrice } from "../../utils";
-import { connect } from "react-redux";
-import { removeFromCart } from "../../store/actions/action";
 
+
+import photo2 from '../../images/photo2.jpg';
 
 
 const Header = (props) => {
-    const [menuActive, setMenuState] = useState(false);
-    const [cartActive, setcartState] = useState(false);
+    // const [menuActive, setMenuState] = useState(false);
+    // const [cartActive, setcartState] = useState(false);
 
-    const SubmitHandler = (e) => {
-        e.preventDefault()
-    }
+    // const SubmitHandler = (e) => {
+    //     e.preventDefault()
+    // }
 
     const ClickHandler = () => {
         window.scrollTo(10, 0);
     }
 
-    const { carts } = props;
+    // const { carts } = props;
 
 
     return (
@@ -28,12 +27,12 @@ const Header = (props) => {
                 <nav className="navigation navbar navbar-expand-lg navbar-light">
                     <div className="container-fluid">
                         <div className="row align-items-center">
-                            <div className="col-lg-3 col-md-3 col-3 d-lg-none dl-block">
+                            {/* <div className="col-lg-3 col-md-3 col-3 d-lg-none dl-block">
                                 <MobileMenu />
-                            </div>
+                            </div> */}
                             <div className="col-lg-2 col-md-6 col-6">
                                 <div className="navbar-header">
-                                    <Link onClick={ClickHandler} className="navbar-brand" to="/home"><img src={props.Logo}
+                                    <Link onClick={ClickHandler} className="navbar-brand" to="/home"><img src={photo2}
                                         alt="logo" /></Link>
                                 </div>
                             </div>
@@ -44,25 +43,25 @@ const Header = (props) => {
                                         <li className="menu-item-has-children">
                                             <Link onClick={ClickHandler} to="#">Home</Link>
                                             <ul className="sub-menu">
-                                                <li><Link onClick={ClickHandler} to="/home">Home style 1</Link></li>
-                                                <li><Link onClick={ClickHandler} to="/home-2">Home style 2</Link></li>
-                                                <li><Link onClick={ClickHandler} to="/home-3">Home style 3</Link></li>
+                                                <li><Link onClick={ClickHandler} to="/home">Home Page</Link></li>
+                                                {/* <li><Link onClick={ClickHandler} to="/home-2">Home style 2</Link></li> */}
+                                                {/* <li><Link onClick={ClickHandler} to="/home-3">Home style 3</Link></li> */}
                                             </ul>
                                         </li>
                                         <li><Link onClick={ClickHandler} to="/about">About</Link></li>
-                                        <li className="menu-item-has-children">
+                                        {/* <li className="menu-item-has-children">
                                             <Link onClick={ClickHandler} to="#">Pages</Link>
                                             <ul className="sub-menu">
-                                                <li><Link onClick={ClickHandler} to="/team">Doctor</Link></li>
-                                                <li><Link onClick={ClickHandler} to="/team-single/Marlene-Henry">Doctor Single</Link></li>
-                                                <li><Link onClick={ClickHandler} to="/shop">Shop</Link></li>
-                                                <li><Link onClick={ClickHandler} to="/shop-single/prayer-mat">Shop Single</Link></li>
-                                                <li><Link onClick={ClickHandler} to="/cart">Cart</Link></li>
-                                                <li><Link onClick={ClickHandler} to="/checkout">Checkout</Link></li>
-                                                <li><Link onClick={ClickHandler} to="/404">404 Error</Link></li>
-                                                <li><Link onClick={ClickHandler} to="/faq">FAQ</Link></li>
-                                            </ul>
-                                        </li>
+                                                {/* <li><Link onClick={ClickHandler} to="/team">Doctor</Link></li> */}
+                                                {/* <li><Link onClick={ClickHandler} to="/team-single/Marlene-Henry">Doctor Single</Link></li> */}
+                                                {/* <li><Link onClick={ClickHandler} to="/shop">Shop</Link></li> */}
+                                                {/* <li><Link onClick={ClickHandler} to="/shop-single/prayer-mat">Shop Single</Link></li> */}
+                                                {/* <li><Link onClick={ClickHandler} to="/cart">Cart</Link></li> */}
+                                                {/* <li><Link onClick={ClickHandler} to="/checkout">Checkout</Link></li> */}
+                                               {/* <li><Link onClick={ClickHandler} to="/404">404 Error</Link></li> */}
+                                                {/* <li><Link onClick={ClickHandler} to="/faq">FAQ</Link></li> */}
+                                            {/* </ul> */}
+                                        {/* </li> */} 
                                         <li className="menu-item-has-children">
                                             <Link onClick={ClickHandler} to="/services">Services</Link>
                                             <ul className="sub-menu">
@@ -77,7 +76,7 @@ const Header = (props) => {
                                                 <li><Link onClick={ClickHandler} to="/project-single/Heart-Institure">Portfolio Single</Link></li>
                                             </ul>
                                         </li>
-                                        <li className="menu-item-has-children">
+                                        {/* <li className="menu-item-has-children">
                                             <Link onClick={ClickHandler} to="#">Blog</Link>
                                             <ul className="sub-menu">
                                                 <li><Link onClick={ClickHandler} to="/blog">Blog right sidebar</Link></li>
@@ -95,14 +94,14 @@ const Header = (props) => {
                                                     </ul>
                                                 </li>
                                             </ul>
-                                        </li>
+                                        </li> */}
                                         <li><Link onClick={ClickHandler} to="/contact">Contact</Link></li>
                                     </ul>
                                 </div>
                             </div>
-                            <div className="col-lg-3 col-md-2 col-2">
-                                <div className="header-right">
-                                    <div className="mini-cart">
+                            {/* <div className="col-lg-3 col-md-2 col-2"> */}
+                                {/* <div className="header-right"> */}
+                                    {/* <div className="mini-cart">
                                         <button className="cart-toggle-btn" onClick={() => setcartState(!cartActive)}>
                                             {" "}
                                             <i className="flaticon-shopping-bag"></i>
@@ -147,8 +146,8 @@ const Header = (props) => {
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div className="header-search-form-wrapper">
+                                    </div> */}
+                                    {/* <div className="header-search-form-wrapper">
                                         <div className="cart-search-contact">
                                             <button onClick={() => setMenuState(!menuActive)} className="search-toggle-btn"><i
                                                 className={`fi ${menuActive ? "ti-close" : "flaticon-search"}`}></i></button>
@@ -163,9 +162,9 @@ const Header = (props) => {
                                                 </form>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                            </div>
+                                    </div> */}
+                                {/* </div> */}
+                            {/* </div> */}
                         </div>
                     </div>
                 </nav>
@@ -173,11 +172,11 @@ const Header = (props) => {
         </header>
     )
 }
-const mapStateToProps = (state) => {
-    return {
-        carts: state.cartList.cart,
-    };
-};
+// const mapStateToProps = (state) => {
+//     return {
+//         carts: state.cartList.cart,
+//     };
+// };
 
 
-export default connect(mapStateToProps, { removeFromCart })(Header);
+export default (Header);

@@ -3,7 +3,7 @@
 import React, { Fragment } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import Services from '../../api/Services';
-import ServiceForm from './ServiceForm'; // Fixed typo from 'ServiceFrom' to 'ServiceForm'
+import ServiceForm from './ServiceForm '; 
 import ServiceSidebar from './sidebar';
 import Navbar from '../../components/Navbar/Navbar';
 import PageTitle from '../../components/pagetitle/PageTitle';

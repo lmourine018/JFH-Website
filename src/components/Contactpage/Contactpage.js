@@ -20,7 +20,7 @@ const Contactpage = () => {
                                         </div>
                                         <div className="office-info-text">
                                             <h2>Address</h2>
-                                            <p>7 Green Lake Street Crawfordsville, IN 47933</p>
+                                            <p>Along Kangundo Road, at Kayole Junction behind shell Petrol station</p>
                                         </div>
                                     </div>
                                 </div>
@@ -33,8 +33,7 @@ const Contactpage = () => {
                                         </div>
                                         <div className="office-info-text">
                                             <h2>Email Us</h2>
-                                            <p>medically@gmail.com</p>
-                                            <p>medically@gmail.com</p>
+                                            <p>junctionfamilyhosi@gmail.com</p>
                                         </div>
                                     </div>
                                 </div>
@@ -47,8 +46,8 @@ const Contactpage = () => {
                                         </div>
                                         <div className="office-info-text">
                                             <h2>Call Now</h2>
-                                            <p>+1 800 123 456 789</p>
-                                            <p>+1 800 123 654 987</p>
+                                            <p>+ (254) 700668707</p>
+                                        
                                         </div>
                                     </div>
                                 </div>
@@ -56,8 +55,7 @@ const Contactpage = () => {
                         </div>
                         <div className="wpo-contact-title">
                             <h2>Have Any Question?</h2>
-                            <p>It is a long established fact that a reader will be distracted
-                                content of a page when looking.</p>
+                            <p>please drop your question here.</p>
                         </div>
                         <div className="wpo-contact-form-area">
                             <ContactForm />

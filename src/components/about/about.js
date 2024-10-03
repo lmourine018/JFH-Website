@@ -30,7 +30,7 @@ const about = (props) => {
                                             <p>Years Of Experience</p>
                                         </div>
                                     </div>
-                                    <div className="doctors">
+                                    {/* <div className="doctors">
                                         <ul>
                                         <li><img src={Abd1} alt="" /></li>
                                         <li><img src={Abd2} alt="" /></li>
@@ -39,7 +39,7 @@ const about = (props) => {
                                             <li><span>95+</span></li>
                                         </ul>
                                         <h4>Available Doctors</h4>
-                                    </div>
+                                    </div> */}
                             </div>
                         </div>
                     </div>
@@ -51,8 +51,7 @@ const about = (props) => {
                                 technology companies use to achieve their goals and objectives. The policies may vary
                                 depending on the company's size, market position, and competitive landscape. Commodo
                                 erat amet vitae consectetur consectetur feugiat.</p>
-                            <p>Tellus viverra eu risus ut ipsum magna sed odio elit. Sed sem purus tincidunt
-                                condimentum amet condimentum massa. Nunc vel nascetur id cras.</p>
+{/*                           
                             <div className="ceo">
                                 <div>
                                     <h4>Savannah Nguyen</h4>
@@ -61,7 +60,7 @@ const about = (props) => {
                                 <div>
                                     <img src={sine} alt="" />
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>

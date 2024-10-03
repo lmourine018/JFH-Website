@@ -3,7 +3,7 @@ import { Link, useParams } from 'react-router-dom'
 import Navbar from '../../components/Navbar/Navbar'
 import PageTitle from '../../components/pagetitle/PageTitle'
 import Projects from '../../api/projects';
-import ContactForm from '../ServiceSinglePage/ServiceFrom ';
+import ContactForm from '../ServiceSinglePage/ServiceForm ';
 import Footer from '../../components/footer/Footer';
 import Scrollbar from '../../components/scrollbar/scrollbar'
 import logo from '../../images/logo-2.svg'
