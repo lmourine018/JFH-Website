@@ -27,8 +27,8 @@ const HomePage = () => {
             <ProcessSection hclass={"work_section section-padding"} />
             {/* <ProjectSection hclass={'project_section section-padding'} /> */}
             <Testimonial tClass={'testimonial_section testimonial_section_slider'} />
-            <CtaSection tClass={'cta_section'} />
-            <TeamSection hclass={'team_section section-padding'} />
+            {/* <CtaSection tClass={'cta_section'} /> */}
+            {/* <TeamSection hclass={'team_section section-padding'} /> */}
             <FunFact hclass={'funfact_section'} />
             {/* <BlogSection tClass={'blog_section section-padding'} /> */}
             {/* <CtafromSection hclass={'ctafrom_section'} /> */}

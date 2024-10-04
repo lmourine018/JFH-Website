@@ -5,7 +5,7 @@ const ContactForm = () => {
         name: '',
         email: '',
         department: '',
-        doctor: '',
+        
         message: ''
     });
 
@@ -13,7 +13,6 @@ const ContactForm = () => {
         nameError: '',
         emailError: '',
         departmentError: '',
-        doctorError: '',
         messageError: ''
     });
 
@@ -23,7 +22,6 @@ const ContactForm = () => {
             nameError: '',
             emailError: '',
             departmentError: '',
-            doctorError: '',
             messageError: ''
         };
 
@@ -43,10 +41,7 @@ const ContactForm = () => {
             isValid = false;
         }
 
-        if (formData.doctor.trim() === '') {
-            errors.doctorError = 'Please choose a doctor';
-            isValid = false;
-        }
+       
 
         if (formData.message.trim() === '') {
             errors.messageError = 'Please describe your problem';
@@ -72,7 +67,6 @@ const ContactForm = () => {
                 name: '',
                 email: '',
                 department: '',
-                doctor: '',
                 message: ''
             });
         }
@@ -120,21 +114,7 @@ const ContactForm = () => {
                     </select>
                     <span className="error">{formErrors.departmentError}</span>
                 </div>
-                <div className="col-lg-6 col-md-6 col-12 form_item">
-                    <label>Choose Doctor</label>
-                    <select
-                        name="doctor"
-                        value={formData.doctor}
-                        onChange={handleInputChange}
-                        className="input-fild"
-                    >
-                        <option value="">Choose Doctor</option>
-                        <option value="Doctor 1">Doctor 1</option>
-                        <option value="Doctor 2">Doctor 2</option>
-                        <option value="Doctor 3">Doctor 3</option>
-                    </select>
-                    <span className="error">{formErrors.doctorError}</span>
-                </div>
+            
                 <div className="col-12 form_item">
                     <label>Say Details About Your Problem</label>
                     <textarea

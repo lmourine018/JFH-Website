@@ -1,5 +1,5 @@
 import React from 'react';
-import Cta1 from '../../images/cta-2.png'
+import callPhoto2  from '../../images/callPhoto2.jpg'
 const CtaSectionS2 = () => {
     return (
         <section className="cta_section_s2">
@@ -11,14 +11,14 @@ const CtaSectionS2 = () => {
                         </div>
                         <div className="text">
                             <h2>Available 24/7</h2>
-                            <h3>(208) 555-0112</h3>
+                            <h3>0700668707</h3>
                         </div>
                     </div>
                     <div className="shape-icon">
                         <i className="flaticon-24-7"></i>
                     </div>
                     <div className="image">
-                        <img src={Cta1} alt="" />
+                        <img src={callPhoto2} alt="" />
                     </div>
                 </div>
             </div>

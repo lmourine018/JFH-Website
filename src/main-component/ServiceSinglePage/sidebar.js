@@ -95,11 +95,11 @@ const ServiceSidebar = (props) => {
                     <li><Link onClick={ClickHandler} to="/services">Orthopedic <span>5</span></Link></li>
                     <li><Link onClick={ClickHandler} to="/services">Pharmacology <span>3</span></Link></li>
                     <li><Link onClick={ClickHandler} to="/services">Genealogy <span>7</span></Link></li>
-                    <li><Link onClick={ClickHandler} to="/services">Rehabilitation <span>8</span></Link></li>
-                    <li><Link onClick={ClickHandler} to="/services">Heart Surgery <span>4</span></Link></li>
+                    <li><Link onClick={ClickHandler} to="/services">Labaratory <span>8</span></Link></li>
+                    <li><Link onClick={ClickHandler} to="/services">Inpatient Services <span>4</span></Link></li>
                 </ul>
             </div>
-            <div className="newsletter_widget widget">
+            {/* <div className="newsletter_widget widget">
                 <h2>Newsletter</h2>
                 <span>Join 20,000 Sabscribers!</span>
                 <form className="emailForm" id="emailForm">
@@ -108,15 +108,15 @@ const ServiceSidebar = (props) => {
                     <button type="submit">Sign Up</button>
                 </form>
                 <p>By signing up you agree to our Privacy Policy</p>
-            </div>
-            <div className="instagram_widget widget">
+            </div> */}
+            {/* <div className="instagram_widget widget">
                 <h2>Instagram</h2>
                 <ul>
                     {insData.map((instag, iky) => (
                         <li key={iky}><img src={instag.img} alt="" /></li>
                     ))}
                 </ul>
-            </div>
+            </div> */}
         </div>
 
     )

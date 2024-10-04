@@ -5,7 +5,7 @@ import VideoModal from '../ModalVideo/VideoModal';
 // image
 import Himg1 from '../../images/slider/1.png'
 import Hshape from '../../images/slider/shape.svg'
-import clearLogo from '../../images/clearLogo.jpeg'; // Import the new image
+import outerView from '../../images/outerView.jpeg'; // Import the new image
 
 const ClickHandler = () => {
     window.scrollTo(10, 0);
@@ -21,13 +21,17 @@ const hero = () => {
                 </svg>
             </div>
             <div className="content">
-                <h2>Welcome to Junction Family Hospital</h2>
-                <h3>Your journey to better health starts here</h3>
-                <p>Your health is our priority! Our dedicated team of 
-                    medical professionals 
-                     is here to provide compassionate care and cutting-edge treatments in a warm,
-                      healing environment. Whether you're visiting for a routine checkup or specialized care,
-                       we are committed to supporting your well-being every step of the way. 
+                <h3>Welcome to Junction Family Hospital</h3>
+                {/* <h3>Your journey to better health starts here</h3> */}
+                <p>At Junction Family Hospital
+where compassionate care meets
+cutting-edge medicine. Established
+in 2022, we have been dedicated to
+providing exceptional healthcare
+services to our community. At JFH, we prioritize patient well-being and strive to create an
+environment where healing and recovery thrive. Our
+commitment to excellence is reflected in every aspect of our
+hospital, from our experienced medical staff to our patient centered approach.
         </p>
                 <Link onClick={ClickHandler} className="theme-btn" to="/about">Make
                     Appointment</Link>
@@ -35,7 +39,7 @@ const hero = () => {
             <div className="image_content">
                
                 <div className="photo">
-                    <img src={clearLogo} alt="Hospital" />
+                    <img src={outerView} alt="Hospital" />
                 </div>
                
             </div>

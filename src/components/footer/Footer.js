@@ -23,13 +23,29 @@ const Footer = (props) => {
                                 </div>
                                 <p>Your journey to better Health starts here!.</p>
                                 <div className="social-widget">
-                                    <ul>
-                                        <li><Link onClick={ClickHandler} to="#"><i className="flaticon-facebook-app-symbol"></i></Link></li>
-                                        <li><Link onClick={ClickHandler} to="#"><i className="flaticon-twitter"></i></Link></li>
-                                        <li><Link onClick={ClickHandler} to="#"><i className="flaticon-linkedin"></i></Link></li>
-                                        <li><Link onClick={ClickHandler} to="#"><i className="flaticon-instagram"></i></Link></li>
-                                    </ul>
-                                </div>
+    <ul>
+        <li>
+            <a onClick={ClickHandler} href="https://www.facebook.com/junctionfamilyhospital" target="_blank" rel="noopener noreferrer">
+                <i className="flaticon-facebook-app-symbol"></i>
+            </a>
+        </li>
+        <li>
+            <a onClick={ClickHandler} href="https://x.com/jf_hospital?t=ZEssPVxRuu150XsuZNIk0A&s=09" target="_blank" rel="noopener noreferrer">
+                <i className="flaticon-twitter"></i>
+            </a>
+        </li>
+        <li>
+            <a onClick={ClickHandler} href="#" target="_blank" rel="noopener noreferrer">
+                <i className="flaticon-linkedin"></i>
+            </a>
+        </li>
+        <li>
+            <a onClick={ClickHandler} href="#" target="_blank" rel="noopener noreferrer">
+                <i className="flaticon-instagram"></i>
+            </a>
+        </li>
+    </ul>
+</div>
                             </div>
                         </div>
                         <div className="col col-lg-3 col-md-6 col-sm-12 col-12">
