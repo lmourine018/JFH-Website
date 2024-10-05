@@ -4,9 +4,12 @@ import SectionTitle from '../SectionTitle/SectionTitle';
 /* image */
 import Pross1 from '../../images/work/1.jpg'
 import Pross2 from '../../images/work/2.jpg'
-import Pross3 from '../../images/work/3.jpg'
-import Pross4 from '../../images/work/4.jpg'
+import access from '../../images/access.jpeg'
+import skilled from '../../images/skilled.png'
 import Shape from '../../images/work/shape.svg'
+import compassionateCare from '../../images/compasionate-care.jpg'
+import ourServices from '../../images/our-services.png'
+
 
 const ProcessSection = (props) => {
     return (
@@ -22,7 +25,7 @@ const ProcessSection = (props) => {
                         <div className="col-xl-3 col-lg-6 col-md-6 col-12">
                             <div className="work_card">
                                 <div className="image">
-                                    <img src={Pross1} alt="" />
+                                    <img src={compassionateCare} alt="compassionateCare" />
                                         <span className="number">01</span>
                                 </div>
                                 <div className="text">
@@ -36,7 +39,7 @@ const ProcessSection = (props) => {
                         <div className="col-xl-3 col-lg-6 col-md-6 col-12">
                             <div className="work_card">
                                 <div className="image">
-                                    <img src={Pross2} alt="" />
+                                    <img src={ourServices} alt="" />
                                         <span className="number">02</span>
                                 </div>
                                 <div className="text">
@@ -50,7 +53,7 @@ const ProcessSection = (props) => {
                         <div className="col-xl-3 col-lg-6 col-md-6 col-12">
                             <div className="work_card">
                                 <div className="image">
-                                    <img src={Pross3} alt="" />
+                                    <img src={access} alt="" />
                                         <span className="number">03</span>
                                 </div>
                                 <div className="text">
@@ -64,7 +67,7 @@ const ProcessSection = (props) => {
                         <div className="col-xl-3 col-lg-6 col-md-6 col-12">
                             <div className="work_card">
                                 <div className="image">
-                                    <img src={Pross4} alt="" />
+                                    <img src={skilled} alt="" />
                                         <span className="number">04</span>
                                 </div>
                                 <div className="text">

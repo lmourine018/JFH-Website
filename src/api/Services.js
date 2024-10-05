@@ -16,6 +16,10 @@ import pharmacry from '../images/service-single/pharmacry.jpeg';
 import pharmacology1 from '../images/service-single/pharmacology1.jpg';
 import inpatient1 from '../images/service-single/inpatient1.jpeg';
 import inpatient2 from '../images/service-single/inpatient2.jpeg';
+import radiologyMain from '../images/service-single/radiologyMain.png';
+import radiology1 from '../images/service-single/radiology1.jpg';
+
+
 
 
 
@@ -159,25 +163,27 @@ const Services = [
             'Pain Management',
         ],
         approach: 'We prioritize patient safety and comfort, employing cutting-edge medical technologies and compassionate care to support patients throughout their inpatient journey.',
-        related: ['outpatient-services', 'cardiology-services'],
+        related: ['outpatient-services', 'radiology-services'],
         icon: 'flaticon-inpatient',    // Ensure this icon class exists in your icon library
     },
-    
     {
-        slug: 'orthopedic',
-        title: 'Orthopedic',
-        description: 'Comprehensive orthopedic care and treatments.',
-        simage: simg3,
-        capabilitiesDescription: 'Our orthopedic services include:',
+        slug: 'Radiology',
+        title: 'Radiology Services',
+        description: 'At Junction Family Hospital, our Radiology Services prioritize precision and patient-centered care. Utilizing cutting-edge imaging technologies and fostering collaboration among specialists, we strive to enhance diagnostic accuracy and treatment outcomes. Join us in transforming healthcare through innovative imaging solutions.',
+        simage: radiologyMain,
+        images: [radiology1],
+        capabilitiesDescription: 'Our radiology services include:',
         capabilities: [
-            'Fracture Management',
-            'Joint Replacement Surgery',
-            'Arthroscopy',
-            'Physical Therapy',
-            'Sports Medicine',
+            'X-ray Imaging',
+            'Magnetic Resonance Imaging (MRI)',
+            'Computed Tomography (CT) Scans',
+            'Ultrasound Imaging',
+            'Mammography',
+            'Interventional Radiology Procedures',
+            'Nuclear Medicine'
         ],
-        approach: 'We specialize in providing advanced orthopedic treatments for bones and joints, ensuring a speedy recovery.',
-        related: ['physiotherapy-services', 'theater-services'],
+        approach: 'We provide advanced imaging solutions to ensure accurate diagnoses and effective treatment planning.',
+        related: ['outpatient-services','outpatient-services'],
         icon: 'flaticon-bone',
     },
     

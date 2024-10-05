@@ -23,15 +23,8 @@ const hero = () => {
             <div className="content">
                 <h3>Welcome to Junction Family Hospital</h3>
                 {/* <h3>Your journey to better health starts here</h3> */}
-                <p>At Junction Family Hospital
-where compassionate care meets
-cutting-edge medicine. Established
-in 2022, we have been dedicated to
-providing exceptional healthcare
-services to our community. At JFH, we prioritize patient well-being and strive to create an
-environment where healing and recovery thrive. Our
-commitment to excellence is reflected in every aspect of our
-hospital, from our experienced medical staff to our patient centered approach.
+                <p> Your health and well-being are our top priorities. Our dedicated team of healthcare professionals is here to provide compassionate, patient-centered care. Together, we can ensure a healthier future for you and your family. Thank you for choosing us!
+
         </p>
                 <Link onClick={ClickHandler} className="theme-btn" to="/about">Make
                     Appointment</Link>

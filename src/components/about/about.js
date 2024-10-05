@@ -21,17 +21,17 @@ const About = (props) => {
                                 <img src={aboutImage} alt="About Us" />
                                 <span className="round-on"></span>
                                 <span className="round-two"></span>
-                                <div className="award">
-                                    <div className="icon">
+                                {/* <div className="award"> */}
+                                    {/* <div className="icon">
                                         <i className="flaticon-cup"></i>
-                                    </div>
-                                    <div className="text">
+                                    </div> */}
+                                    {/* <div className="text">
                                         <h2>
                                             <CountUp end={25} enableScrollSpy />+
                                         </h2>
                                         <p>Years Of Experience</p>
-                                    </div>
-                                </div>
+                                    </div> */}
+                                {/* </div> */}
                                 {/* Uncomment and use if you have doctors' images */}
                                 {/* 
                                 <div className="doctors">
