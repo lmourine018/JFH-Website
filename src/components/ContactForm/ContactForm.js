@@ -1,9 +1,8 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 import SimpleReactValidator from 'simple-react-validator';
-
+import { db } from '../../firebase'; // Go up two directories to reach firebase.js
 
 const ContactForm = () => {
-
     const [forms, setForms] = useState({
         name: '',
         email: '',
@@ -11,109 +10,95 @@ const ContactForm = () => {
         phone: '',
         message: ''
     });
-    const [validator] = useState(new SimpleReactValidator({
-        className: 'errorMessage'
-    }));
-    const changeHandler = e => {
-        setForms({ ...forms, [e.target.name]: e.target.value })
-        if (validator.allValid()) {
-            validator.hideMessages();
-        } else {
-            validator.showMessages();
-        }
+    const [validator] = useState(new SimpleReactValidator());
+
+    const changeHandler = (e) => {
+        setForms({ ...forms, [e.target.name]: e.target.value });
     };
 
-    const submitHandler = e => {
+    const submitHandler = async (e) => {
         e.preventDefault();
         if (validator.allValid()) {
             validator.hideMessages();
-            setForms({
-                name: '',
-                email: '',
-                subject: '',
-                phone: '',
-                message: ''
-            })
+
+            // Save the form data to Firestore
+            try {
+                await db.collection('contactFormSubmissions').add(forms);
+                alert('Your message has been sent successfully!');
+                
+                // Reset the form
+                setForms({
+                    name: '',
+                    email: '',
+                    subject: '',
+                    phone: '',
+                    message: ''
+                });
+            } catch (error) {
+                console.error('Error saving data to Firestore:', error);
+            }
         } else {
             validator.showMessages();
         }
     };
 
     return (
-        <form onSubmit={(e) => submitHandler(e)} className="contact-validation-active" >
-            <div className="row">
-                <div className="col col-lg-6 col-12">
-                    <div className="form-field">
-                        <input
-                            value={forms.name}
-                            type="text"
-                            name="name"
-                            onBlur={(e) => changeHandler(e)}
-                            onChange={(e) => changeHandler(e)}
-                            placeholder="Your Name" />
-                        {validator.message('name', forms.name, 'required|alpha_space')}
-                    </div>
-                </div>
-                <div className="col col-lg-6 col-12">
-                    <div className="form-field">
-                        <input
-                            value={forms.email}
-                            type="email"
-                            name="email"
-                            onBlur={(e) => changeHandler(e)}
-                            onChange={(e) => changeHandler(e)}
-                            placeholder="Your Email" />
-                        {validator.message('email', forms.email, 'required|email')}
-                    </div>
-                </div>
-                <div className="col col-lg-6 col-12">
-                    <div className="form-field">
-                        <input
-                            value={forms.phone}
-                            type="phone"
-                            name="phone"
-                            onBlur={(e) => changeHandler(e)}
-                            onChange={(e) => changeHandler(e)}
-                            placeholder="Your phone" />
-                        {validator.message('phone', forms.phone, 'required|phone')}
-                    </div>
-                </div>
-                <div className="col col-lg-6 col-12">
-                    <div className="form-field">
-                        <select
-                            onBlur={(e) => changeHandler(e)}
-                            onChange={(e) => changeHandler(e)}
-                            value={forms.subject}
-                            type="text"
-                            name="subject">
-                            <option>Services</option>
-                            <option>Dental Care</option>
-                            <option>Pharmacology</option>
-                            <option>Orthopedic</option>
-                            <option>Gyneological</option>
-                            <option>Rehabilitation</option>
-                            <option>Heart Surgery</option>
-                        </select>
-                        {validator.message('subject', forms.subject, 'required')}
-                    </div>
-                </div>
-                <div className="col col-lg-12 col-12">
-                    <textarea
-                        onBlur={(e) => changeHandler(e)}
-                        onChange={(e) => changeHandler(e)}
-                        value={forms.message}
-                        type="text"
-                        name="message"
-                        placeholder="Message">
-                    </textarea>
-                    {validator.message('message', forms.message, 'required')}
-                </div>
+        <form onSubmit={submitHandler} className="contact-validation-active">
+            <div>
+                <input
+                    type="text"
+                    name="name"
+                    value={forms.name}
+                    onChange={changeHandler}
+                    placeholder="Your Name"
+                />
+                {validator.message('name', forms.name, 'required|alpha_space')}
             </div>
-            <div className="submit-area">
-                <button type="submit" className="theme-btn">Get in Touch</button>
+            <div>
+                <input
+                    type="email"
+                    name="email"
+                    value={forms.email}
+                    onChange={changeHandler}
+                    placeholder="Your Email"
+                />
+                {validator.message('email', forms.email, 'required|email')}
             </div>
-        </form >
-    )
-}
+            <div>
+                <input
+                    type="phone"
+                    name="phone"
+                    value={forms.phone}
+                    onChange={changeHandler}
+                    placeholder="Your Phone"
+                />
+                {validator.message('phone', forms.phone, 'required|phone')}
+            </div>
+            <div>
+                <select
+                    name="subject"
+                    value={forms.subject}
+                    onChange={changeHandler}
+                >
+                    <option value="">Select a Service</option>
+                    <option value="Dental Care">Dental Care</option>
+                    <option value="Pharmacology">Pharmacology</option>
+                    <option value="Orthopedic">Orthopedic</option>
+                </select>
+                {validator.message('subject', forms.subject, 'required')}
+            </div>
+            <div>
+                <textarea
+                    name="message"
+                    value={forms.message}
+                    onChange={changeHandler}
+                    placeholder="Message"
+                ></textarea>
+                {validator.message('message', forms.message, 'required')}
+            </div>
+            <button type="submit">Get in Touch</button>
+        </form>
+    );
+};
 
 export default ContactForm;

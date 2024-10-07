@@ -6,7 +6,7 @@ const VideoCallSection = () => {
 
     return (
         <div className="video-call-section">
-            <h3>Connect with Our Radiology Team via WhatsApp</h3>
+            <h3>Connect with Our  Team via WhatsApp</h3>
             <p>If you have questions or need to discuss any of our services, you can easily connect with us through a WhatsApp video call.</p>
             <a
                 href={`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`}
