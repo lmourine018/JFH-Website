@@ -72,7 +72,7 @@ hospital, from our experienced medical staff to our patient centered approach.
                             </p>
                             <h3>Our Vision</h3>
                             <p>
-                                To be leading healthcare providers in the industry.
+                                To be a leading healthcare provider in the industry.
                             </p>
                             {/* Uncomment and use if you have CEO details */}
                             {/* 

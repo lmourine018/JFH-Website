@@ -1,104 +1,77 @@
+// src/components/ContactForm/ContactForm.js
+
 import React, { useState } from 'react';
-import SimpleReactValidator from 'simple-react-validator';
-import { db } from '../../firebase'; // Go up two directories to reach firebase.js
+import { db } from '../firebase'; // Adjust the path if necessary
+
+// Import Firestore functions
+import { collection, addDoc } from 'firebase/firestore';
 
 const ContactForm = () => {
-    const [forms, setForms] = useState({
-        name: '',
-        email: '',
-        subject: '',
-        phone: '',
-        message: ''
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: '',
+  });
+
+  // Handle input changes
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
     });
-    const [validator] = useState(new SimpleReactValidator());
+  };
 
-    const changeHandler = (e) => {
-        setForms({ ...forms, [e.target.name]: e.target.value });
-    };
+  // Handle form submission
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      // Reference to the 'contacts' collection
+      const contactsCollection = collection(db, "contacts");
 
-    const submitHandler = async (e) => {
-        e.preventDefault();
-        if (validator.allValid()) {
-            validator.hideMessages();
+      // Add a new document with form data
+      const docRef = await addDoc(contactsCollection, formData);
 
-            // Save the form data to Firestore
-            try {
-                await db.collection('contactFormSubmissions').add(forms);
-                alert('Your message has been sent successfully!');
-                
-                // Reset the form
-                setForms({
-                    name: '',
-                    email: '',
-                    subject: '',
-                    phone: '',
-                    message: ''
-                });
-            } catch (error) {
-                console.error('Error saving data to Firestore:', error);
-            }
-        } else {
-            validator.showMessages();
-        }
-    };
+      // Success feedback
+      alert("Form submitted successfully!");
+      setFormData({ name: '', email: '', message: '' });
+      console.log("Document written with ID: ", docRef.id);
+    } catch (error) {
+      console.error("Error saving data to Firestore: ", error);
+      alert("There was an error submitting the form. Please try again.");
+    }
+  };
 
-    return (
-        <form onSubmit={submitHandler} className="contact-validation-active">
-            <div>
-                <input
-                    type="text"
-                    name="name"
-                    value={forms.name}
-                    onChange={changeHandler}
-                    placeholder="Your Name"
-                />
-                {validator.message('name', forms.name, 'required|alpha_space')}
-            </div>
-            <div>
-                <input
-                    type="email"
-                    name="email"
-                    value={forms.email}
-                    onChange={changeHandler}
-                    placeholder="Your Email"
-                />
-                {validator.message('email', forms.email, 'required|email')}
-            </div>
-            <div>
-                <input
-                    type="phone"
-                    name="phone"
-                    value={forms.phone}
-                    onChange={changeHandler}
-                    placeholder="Your Phone"
-                />
-                {validator.message('phone', forms.phone, 'required|phone')}
-            </div>
-            <div>
-                <select
-                    name="subject"
-                    value={forms.subject}
-                    onChange={changeHandler}
-                >
-                    <option value="">Select a Service</option>
-                    <option value="Dental Care">Dental Care</option>
-                    <option value="Pharmacology">Pharmacology</option>
-                    <option value="Orthopedic">Orthopedic</option>
-                </select>
-                {validator.message('subject', forms.subject, 'required')}
-            </div>
-            <div>
-                <textarea
-                    name="message"
-                    value={forms.message}
-                    onChange={changeHandler}
-                    placeholder="Message"
-                ></textarea>
-                {validator.message('message', forms.message, 'required')}
-            </div>
-            <button type="submit">Get in Touch</button>
-        </form>
-    );
+  return (
+    <form onSubmit={handleSubmit}>
+      <input
+        type="text"
+        name="name"
+        value={formData.name}
+        onChange={handleChange}
+        placeholder="Your Name"
+        required
+      />
+      
+      <input
+        type="email"
+        name="email"
+        value={formData.email}
+        onChange={handleChange}
+        placeholder="Your Email"
+        required
+      />
+      
+      <textarea
+        name="message"
+        value={formData.message}
+        onChange={handleChange}
+        placeholder="Your Message"
+        required
+      ></textarea>
+      
+      <button type="submit">Submit</button>
+    </form>
+  );
 };
 
 export default ContactForm;

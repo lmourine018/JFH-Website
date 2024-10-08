@@ -10,7 +10,7 @@ const FunFact = (props) => {
                     <div className="col col-lg-3 col-md-6 col-sm-6 col-12">
                         <div className="item">
                             <i className="flaticon-doctor"></i>
-                            <h3><CountUp end={250} enableScrollSpy />+</h3>
+                            <h3><CountUp end={25} enableScrollSpy />+</h3>
                             <p>Qualified Doctors</p>
                         </div>
                     </div>
@@ -24,7 +24,7 @@ const FunFact = (props) => {
                     <div className="col col-lg-3 col-md-6 col-sm-6 col-12">
                         <div className="item">
                             <i className="flaticon-award"></i>
-                            <h3><CountUp end={25} enableScrollSpy />+</h3>
+                            <h3><CountUp end={5} enableScrollSpy />+</h3>
                             <p>Award Winning</p>
                         </div>
                     </div>

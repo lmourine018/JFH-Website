@@ -110,7 +110,7 @@ const AppointmentForm = () => {
                     {errors.email && <p className="error">{errors.email}</p>}
                 </div>
                 <div className="form_item">
-                    <label>Select Department</label>
+                    <label>Selec Department</label>
                     <select
                         name="department"
                         className="form_control"
@@ -118,29 +118,16 @@ const AppointmentForm = () => {
                         onChange={handleChange}
                         onBlur={() => validate({ department: formData.department })}
                     >
-                        <option value="">Department</option>
-                        <option value="subject1">Subject 1</option>
-                        <option value="subject2">Subject 2</option>
-                        <option value="subject3">Subject 3</option>
+                        <option value="">Labaratory Department</option>
+                        <option value="Maternity">Maternity</option>
+                        <option value="orthopedic">orthopedic</option>
+                        <option value="Pharmaceutical">Pharmaceutical</option>
+                        <option value="Others">Others</option>
+
                     </select>
                     {errors.department && <p className="error">{errors.department}</p>}
                 </div>
-                <div className="form_item">
-                    <label>Choose Doctor</label>
-                    <select
-                        name="doctor"
-                        className="form_control"
-                        value={formData.doctor}
-                        onChange={handleChange}
-                        onBlur={() => validate({ doctor: formData.doctor })}
-                    >
-                        <option value="">Doctor</option>
-                        <option value="subject1">Subject 1</option>
-                        <option value="subject2">Subject 2</option>
-                        <option value="subject3">Subject 3</option>
-                    </select>
-                    {errors.doctor && <p className="error">{errors.doctor}</p>}
-                </div>
+              
                 <div className="form_item">
                     <input className="form_btn" type="submit" value="Send" disabled={isSubmitting} />
                 </div>
