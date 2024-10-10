@@ -23,13 +23,7 @@ const testimonials = [
         title: 'Armani Fisher',
         sub: "Content Writer",
     },
-    {
-        id: '03',
-        img: Img3,
-        Des: "Purus egeto consectur massa amert. Hactor bodiam suspendie faucibus posuere dignissim amet to atthe. Vitaer of sollicitudin mauris erat odio maecenas mattis praesent.Eget vitaoe.",
-        title: 'Rebeca Connelly',
-        sub: "Content Writer",
-    },
+
 
 
 ]

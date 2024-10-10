@@ -21,12 +21,12 @@ const HomePage = () => {
         <Fragment>
             <Navbar logoSrc={photo2} hclass={'wpo-site-header'} /> {/* Updated here */}
             <Hero hclass={'static-hero'} />
-            <AppointmentSection hclass={'appointment_section'} />
+            {/* <AppointmentSection hclass={'appointment_section'} /> */}
             <ServiceSection hclass={"service_section section-padding"} />
             <About hclass={'about_section section-padding'} />
             <ProcessSection hclass={"work_section section-padding"} />
             {/* <ProjectSection hclass={'project_section section-padding'} /> */}
-            <Testimonial tClass={'testimonial_section testimonial_section_slider'} />
+            {/* <Testimonial tClass={'testimonial_section testimonial_section_slider'} /> */}
             {/* <CtaSection tClass={'cta_section'} /> */}
             {/* <TeamSection hclass={'team_section section-padding'} /> */}
             <FunFact hclass={'funfact_section'} />

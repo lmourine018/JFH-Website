@@ -10,6 +10,8 @@ import PageTitle from '../../components/pagetitle/PageTitle';
 import Footer from '../../components/footer/Footer';
 import Scrollbar from '../../components/scrollbar/scrollbar';
 import logo from '../../images/logo-2.svg';
+import { AppBar } from '@mui/material';
+import AppointmentForm from '../../components/AppointmentSection/AppointmentForm';
 
 const ServiceSinglePage = () => {
     const ClickHandler = () => {
@@ -128,7 +130,7 @@ const ServiceSinglePage = () => {
                                     <h3>Make An Appointment</h3>
                                     <p>Get in touch with us to see how we can help you with your needs.</p>
                                 </div>
-                                <ServiceForm />
+                                <AppointmentForm/>
                             </div>
                         </div>
 

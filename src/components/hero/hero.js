@@ -26,8 +26,7 @@ const hero = () => {
                 <p> Your health and well-being are our top priorities. Our dedicated team of healthcare professionals is here to provide compassionate, patient-centered care. Together, we can ensure a healthier future for you and your family. Thank you for choosing us!
 
         </p>
-                <Link onClick={ClickHandler} className="theme-btn" to="/about">Make
-                    Appointment</Link>
+                <Link onClick={ClickHandler} className="theme-btn" to="/about">Find out more</Link>
             </div>
             <div className="image_content">
                

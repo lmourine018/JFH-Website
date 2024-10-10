@@ -39,7 +39,7 @@ const Services = [
             'Emergency Dental Care',
         ],
         approach: 'Our approach to dental care focuses on patient comfort, modern techniques, and comprehensive treatment plans tailored to each individual.',
-        related: ['maternity-services', 'pharmacology'],
+        related: ['maternity-services', 'pharmacology', 'optical-clinic', 'outpatient-services','outpatient-services'],
         icon: 'flaticon-tooth',
     },
     {
@@ -59,7 +59,7 @@ const Services = [
             'Cs',
         ],
         approach: 'We provide compassionate and personalized maternity care, ensuring the health and well-being of both mother and child throughout the pregnancy journey.',
-        related: ['dental-services', 'pharmacology'],
+        related: ['dental-services', 'pharmacology', 'optical-clinic','outpatient-services','outpatient-services'],
         icon: 'flaticon-pregnant',
     },
     {
@@ -78,7 +78,7 @@ const Services = [
             'Health and Wellness Programs',
         ],
         approach: 'Our pharmacology team is dedicated to providing accurate and personalized medication management to enhance patient health outcomes.',
-        related: ['dental-services', 'maternity-services'],
+        related: ['dental-services', 'maternity-services', 'optical-clinic','outpatient-services','outpatient-services'],
     },
   
     {
@@ -95,7 +95,7 @@ const Services = [
             'Eye Disease Management',
         ],
         approach: 'We provide complete optical services with state-of-the-art technology to ensure healthy eyes and clear vision.',
-        related: ['dental-services', 'pharmacology'],
+        related: ['dental-services', 'pharmacology', 'labaratory-services'],
         icon: 'flaticon-rehabilitation',
     },
     {
@@ -140,7 +140,7 @@ const Services = [
             'Minor Surgical Procedures',
         ],
         approach: 'We focus on delivering personalized and accessible outpatient care, ensuring that each patient receives timely and effective treatment in a comfortable environment.',
-        related: ['inpatient-services', 'pharmacology-services'],
+        related: ['inpatient-services', 'pharmacology-services', 'labaratory-services'],
         icon: 'flaticon-outpatient',   // Ensure this icon class exists in your icon library
     },
     {
@@ -163,7 +163,7 @@ const Services = [
             'Pain Management',
         ],
         approach: 'We prioritize patient safety and comfort, employing cutting-edge medical technologies and compassionate care to support patients throughout their inpatient journey.',
-        related: ['outpatient-services', 'radiology-services'],
+        related: ['outpatient-services', 'radiology-services', 'labaratory-services'],
         icon: 'flaticon-inpatient',    // Ensure this icon class exists in your icon library
     },
     {
@@ -183,7 +183,7 @@ const Services = [
             'Nuclear Medicine'
         ],
         approach: 'We provide advanced imaging solutions to ensure accurate diagnoses and effective treatment planning.',
-        related: ['outpatient-services','outpatient-services'],
+        related: ['outpatient-services','outpatient-services','labaratory-services'],
         icon: 'flaticon-bone',
     },
     
