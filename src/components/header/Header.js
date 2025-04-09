@@ -4,6 +4,7 @@ import MobileMenu from '../MobileMenu/MobileMenu'
 
 
 import photo2 from '../../images/photo2.jpg';
+import jfhLogo from '../../images/jfhLogo.jpeg'
 
 
 const Header = (props) => {
@@ -19,8 +20,6 @@ const Header = (props) => {
     }
 
     // const { carts } = props;
-
-
     return (
         <header id="header">
             <div className={"" + props.hclass}>
@@ -32,7 +31,7 @@ const Header = (props) => {
                             </div>
                             <div className="col-lg-2 col-md-6 col-6">
                                 <div className="navbar-header">
-                                    <Link onClick={ClickHandler} className="navbar-brand" to="/home"><img src={photo2}
+                                    <Link onClick={ClickHandler} className="navbar-brand" to="/home"><img src={jfhLogo}
                                         alt="logo" /></Link>
                                 </div>
                             </div>
@@ -42,11 +41,7 @@ const Header = (props) => {
                                     <ul className="nav navbar-nav mb-2 mb-lg-0">
                                         <li className="menu-item-has-children">
                                             <Link onClick={ClickHandler} to="/home">Home</Link>
-                                            <ul className="sub-menu">
-                                                {/* <li><Link onClick={ClickHandler} to="/home">Home</Link></li> */}
-                                                {/* <li><Link onClick={ClickHandler} to="/home-2">Home style 2</Link></li> */}
-                                                {/* <li><Link onClick={ClickHandler} to="/home-3">Home style 3</Link></li> */}
-                                            </ul>
+                                          
                                         </li>
                                         <li><Link onClick={ClickHandler} to="/about">About Us</Link></li>
                                         {/* <li className="menu-item-has-children">
@@ -64,10 +59,10 @@ const Header = (props) => {
                                         {/* </li> */} 
                                         <li className="menu-item-has-children">
                                             <Link onClick={ClickHandler} to="/services">Services</Link>
-                                            <ul className="sub-menu">
+                                            {/* <ul className="sub-menu"> */}
                                                 {/* <li><Link onClick={ClickHandler} to="/services">Services</Link></li> */}
                                                 {/* <li><Link onClick={ClickHandler} to="/service-single/Dental-Care">Services Single</Link></li> */}
-                                            </ul>
+                                            {/* </ul> */}
                                         </li>
                                         <li className="menu-item-has-children">
                                             {/* <Link onClick={ClickHandler} to="/project">Portfolio</Link> */}

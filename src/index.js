@@ -7,7 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 // import './css/font-awesome.min.css';
 import './css/themify-icons.css';
 import './css/animate.css';
-import './css/flaticon_medically.css';
+// import './css/flaticon_medically.css';
 import './sass/style.scss';
 
 

@@ -5,12 +5,12 @@ const CtaForm = () => {
     const [formData, setFormData] = useState({
         name: '',
         email: '',
-        company: ''
+        concern: ''
     });
     const [errors, setErrors] = useState({
         name: '',
         email: '',
-        company: ''
+        concern: ''
     });
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -33,9 +33,9 @@ const CtaForm = () => {
             errors.email = "Email is invalid";
         }
    
-        if (!formData.company) {
+        if (!formData.concern) {
             formIsValid = false;
-            errors.company = 'Company is required';
+            errors.concern = 'Concern/question is required';
         }
 
         setErrors(errors);
@@ -60,8 +60,8 @@ const CtaForm = () => {
                 {errors.email && <span className="error">{errors.email}</span>}
             </div>
             <div className="input_filled">
-                <input type="text" name="company" placeholder="Your Company*" value={formData.company} onChange={handleChange} />
-                {errors.company && <span className="error">{errors.company}</span>}
+                <input type="text" name="concern" placeholder="Your Concern" value={formData.concern} onChange={handleChange} />
+                {errors.concern && <span className="error">{errors.concern}</span>}
             </div>
             <div className="input_filled">
                 <button type="submit" >Free Consultancy</button>

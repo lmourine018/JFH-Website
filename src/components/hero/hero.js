@@ -3,8 +3,6 @@ import { Link } from 'react-router-dom';
 import VideoModal from '../ModalVideo/VideoModal';
 
 // image
-import Himg1 from '../../images/slider/1.png'
-import Hshape from '../../images/slider/shape.svg'
 import outerView from '../../images/outerView.jpeg'; // Import the new image
 
 const ClickHandler = () => {
@@ -23,9 +21,9 @@ const hero = () => {
             <div className="content">
                 <h3>Welcome to Junction Family Hospital</h3>
                 {/* <h3>Your journey to better health starts here</h3> */}
-                <p> Your health and well-being are our top priorities. Our dedicated team of healthcare professionals is here to provide compassionate, patient-centered care. Together, we can ensure a healthier future for you and your family. Thank you for choosing us!
-
-        </p>
+                <p> Your health and well-being are our top priorities. Our dedicated team of healthcare professionals is here to provide compassionate,
+                     patient-centered care. Together, we can ensure a healthier future for you and your family. 
+                     Thank you for choosing us! </p>
                 <Link onClick={ClickHandler} className="theme-btn" to="/about">Find out more</Link>
             </div>
             <div className="image_content">

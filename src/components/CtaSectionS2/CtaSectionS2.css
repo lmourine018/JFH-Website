@@ -1,0 +1,44 @@
+/* src/components/CtaSectionS2/CtaSectionS2.css */
+
+.cta_section_s2 {
+    background-color: #007BFF; /* Blue background */
+    color: #ffffff;
+    padding: 30px 30px 50px 300px;}
+
+.office-info-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.whatsapp-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.whatsapp-video-icon i {
+    color: #25D366; /* WhatsApp green */
+}
+
+.whatsapp-title {
+    margin: 10px 0 0;
+    font-size: 20px;
+    color: white;
+}
+
+.whatsapp-button {
+    background-color: #25D366;
+    color: white;
+    padding: 10px 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.whatsapp-button:hover {
+    background-color: #1eb653;
+}

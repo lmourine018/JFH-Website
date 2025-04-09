@@ -54,17 +54,9 @@ const About = (props) => {
                         <div className="content">
                             <h3>Who We Are </h3>
                             <p>
-                            Welcome to Junction Family Hospital
-where compassionate care meets
-cutting-edge medicine. Established
-in 2022, we have been dedicated to
-providing exceptional healthcare
-services to our community. At JFH, we prioritize patient well-being and strive to create an
-environment where healing and recovery thrive. Our
-commitment to excellence is reflected in every aspect of our
-hospital, from our experienced medical staff to our patient centered approach.
-                                At Junction Family Hospital, we believe in the power of healing and the importance of fostering a supportive
-                                healthcare environment. Trust us with your health, and let us be your partner on your journey to wellness.
+                            Welcome to Junction Family Hospital, where compassionate care meets advanced medicine. Since our establishment
+                             in 2022, we've been committed to providing exceptional healthcare to our community. At JFH, your well-being is our top priority, and we strive to create a healing environment where recovery thrives. With a dedicated team of experienced medical professionals and a patient-centered approach, we deliver care that reflects our commitment to excellence.
+                              Trust us with your health, and let us be your partner on your journey to wellness.
                             </p>
                             <h3>Our Mission</h3>
                             <p>
